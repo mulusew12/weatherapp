@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="wethstyle.css">
+</head>
+
+<body>
+    <section class="container">
+       
+       
+    <div class="card">
+        <h1>WEATHER APP</h1> <br>
+        <div class="search">
+            <input type="text" spellcheck="false" placeholder="Enter city" >
+            <button id="btn"><i class="fa-solid fa-search"></i></button>
+        </div>
+
+        <div class="description" id="des">
+            <span id="sign"><i class="fa-solid fa-cloud"></i></span>
+            <div class="temperature" >
+               <h2 id="temperature"></h2>
+            </div>
+            <h2 class="city"></h2>
+            <div class="others">
+                <div class="humidity">
+                    <div class="amount">
+                       <i class="fas fa-tint"></i>
+                        <h3 id="humidity"></h3>
+                    </div>
+                    <p>Humidity</p>
+                </div>
+                <div class="wind">
+                   <div class="amount">
+                       <i class="fas fa-wind"></i>
+                       <h3 id="wind"></h3>
+                   </div>
+                   <p>Wind Speed</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <br>
+    <div class="text">
+    </div>
+</section>
+</body>
+<script src="wscript.js"></script>
+
+</html>

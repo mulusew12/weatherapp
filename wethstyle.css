@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+  
+}
+body{
+    align-items: center;
+  display: flex;
+ flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background: rgb(14, 13, 14);
+}
+.container{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    
+}
+.a{
+    position: absolute;
+    top: 20px;
+    color: white;
+    font-family: sans-serif;
+    left: 50px;
+    font-size: max(2vw, 30px);
+}
+.card{
+    box-shadow: 2px 7px  300px blue;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 30px;
+    width: 500px;
+
+    place-self: center;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    animation: in 2s ease;
+    background: linear-gradient(rgb(5, 143, 248), rgb(10, 23, 21));
+}
+
+.card h1{
+    font-family: monospace;
+    font-size: max(3vw, 35px);
+    padding: 20px;
+   
+}
+.search{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    place-self: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    
+}
+.search input{
+    padding: 20px;
+    width: 65%;
+    font-size: 25px;
+    
+}
+.search button{
+    font-size: 25px;
+    padding: 20px;
+    align-items: center;
+    border-radius: 10px;
+    color: rgb(228, 117, 20);
+    background: rgb(56, 243, 5);
+    cursor: pointer;
+}
+.search button:hover{
+    background: greenyellow;
+    padding: 22px;
+}
+.description{
+ display: none;
+
+}
+.description span{
+    padding: 20px;
+    font-size: 50px;
+    color: yellow;
+    margin-top: 20px;
+}
+.temperature{
+    font-size: 50px;
+  text-decoration: none;
+padding: 10px;
+}
+.city{
+    font-size: 50px;
+    font-family: sans-serif;
+    padding: 20px;
+    color: rgb(255, 0, 128);
+}
+.others{
+    display: flex;
+    justify-content: space-evenly;
+}
+.humidity{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    border: 2px solid green;
+}
+.amount{
+    display: flex;
+    font-size: 25px;
+    gap: 10px;
+    align-items: center;
+}
+.wind{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    border: 2px solid green;
+}
+.others p{
+    font-size: 23px;
+    font-family: monospace;
+    padding: 20px;
+}
+.text{
+    font-size: 30px;
+    color: rgb(255, 3, 32);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    display: flex;
+    gap: 10px;
+}
+
+.top a{
+    padding: 10px;
+    font-size: 30px;
+    border: 1px solid;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
