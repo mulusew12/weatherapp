@@ -3,56 +3,80 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Real-time weather forecast application">
+    <title>Weather Forecast Pro</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="wethstyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+      <link rel="stylesheet" href="wethstyle.css">
 </head>
 
 <body>
-    <section class="container">
-       
-       
+    <div class="background-animation"></div>
+    
+    <div class="header">
+        <h1>Weather Forecast Pro</h1>
+        <p>Get real-time weather updates for any location</p>
+    </div>
+
     <div class="card">
-        <h1>WEATHER APP</h1> <br>
         <div class="search">
-            <input type="text" spellcheck="false" placeholder="Enter city" >
-            <button id="btn"><i class="fa-solid fa-search"></i></button>
+            <input type="text" spellcheck="false" placeholder="Enter city name" id="search-input">
+            <button id="search-btn"><i class="fa-solid fa-search"></i></button>
         </div>
 
-        <div class="description" id="des">
-            <span id="sign"><i class="fa-solid fa-cloud"></i></span>
-            <div class="temperature" >
-               <h2 id="temperature"></h2>
+        <div class="loading">
+            <div class="loading-spinner"></div>
+            <p>Loading weather data...</p>
+        </div>
+
+        <div class="error" id="error-message"></div>
+
+        <div class="weather-info" id="weather-info">
+            <div class="weather-icon">
+                <i id="weather-icon" class="fas fa-cloud"></i>
             </div>
-            <h2 class="city"></h2>
-            <div class="others">
-                <div class="humidity">
-                    <div class="amount">
-                       <i class="fas fa-tint"></i>
-                        <h3 id="humidity"></h3>
+            <div class="temperature" id="temperature">24</div>
+            <div class="city" id="city">New York</div>
+
+            <div class="details">
+                <div class="col">
+                    <i class="fas fa-tint"></i>
+                    <div class="humidity">
+                        <h3 id="humidity">78</h3>
+                        <p>Humidity</p>
                     </div>
-                    <p>Humidity</p>
                 </div>
-                <div class="wind">
-                   <div class="amount">
-                       <i class="fas fa-wind"></i>
-                       <h3 id="wind"></h3>
-                   </div>
-                   <p>Wind Speed</p>
+                <div class="col">
+                    <i class="fas fa-wind"></i>
+                    <div class="wind">
+                        <h3 id="wind">12</h3>
+                        <p>Wind Speed</p>
+                    </div>
                 </div>
             </div>
-            
+
+            <div class="unit-toggle">
+                <button id="celsius-btn" class="active">°C</button>
+                <button id="fahrenheit-btn">°F</button>
+            </div>
+        </div>
+
+        <div class="forecast" id="forecast">
+            <h3>5-Day Forecast</h3>
+            <div class="forecast-container" id="forecast-container">
+                <!-- Forecast items will be added here dynamically -->
+            </div>
         </div>
     </div>
 
-    <br>
-    <div class="text">
+    <div class="footer">
+        <p>© 2023 Weather Forecast Pro | Powered by OpenWeatherMap</p>
     </div>
-</section>
+
+    
 </body>
 <script src="wscript.js"></script>
-
 </html>
